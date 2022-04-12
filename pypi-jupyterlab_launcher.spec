@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyterlab_launcher
 Version  : 0.13.1
-Release  : 42
+Release  : 43
 URL      : https://files.pythonhosted.org/packages/b0/30/96dd5c4caaacbc0c41754cb72547717ac8de67bb48a393b5d8b74080fbd9/jupyterlab_launcher-0.13.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b0/30/96dd5c4caaacbc0c41754cb72547717ac8de67bb48a393b5d8b74080fbd9/jupyterlab_launcher-0.13.1.tar.gz
 Summary  : Jupyter Launcher
@@ -14,9 +14,6 @@ Requires: pypi-jupyterlab_launcher-license = %{version}-%{release}
 Requires: pypi-jupyterlab_launcher-python = %{version}-%{release}
 Requires: pypi-jupyterlab_launcher-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: jupyterlab_launcher
-Provides: jupyterlab_launcher-python
-Provides: jupyterlab_launcher-python3
 BuildRequires : pypi(jsonschema)
 BuildRequires : pypi(notebook)
 
@@ -61,7 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641450486
+export SOURCE_DATE_EPOCH=1649774778
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
