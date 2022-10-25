@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyterlab_launcher
 Version  : 0.13.1
-Release  : 51
+Release  : 52
 URL      : https://files.pythonhosted.org/packages/b0/30/96dd5c4caaacbc0c41754cb72547717ac8de67bb48a393b5d8b74080fbd9/jupyterlab_launcher-0.13.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b0/30/96dd5c4caaacbc0c41754cb72547717ac8de67bb48a393b5d8b74080fbd9/jupyterlab_launcher-0.13.1.tar.gz
 Summary  : Jupyter Launcher
@@ -61,7 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656396874
+export SOURCE_DATE_EPOCH=1666712752
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -83,7 +83,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-jupyterlab_launcher
-cp %{_builddir}/jupyterlab_launcher-0.13.1/LICENSE %{buildroot}/usr/share/package-licenses/pypi-jupyterlab_launcher/8cd4cef90d28bff5235d6343a8158b70a0668dc4
+cp %{_builddir}/jupyterlab_launcher-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-jupyterlab_launcher/8cd4cef90d28bff5235d6343a8158b70a0668dc4 || :
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
